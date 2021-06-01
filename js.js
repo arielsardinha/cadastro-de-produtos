@@ -12,14 +12,20 @@ btn[1].style.display = 'none'
 
 
 function adcionarCarrinho(){
-    if(nomeProduto.value != '' && quantidade.value != ''){
+    if(nomeProduto.value != '' && quantidade.value != '' && valor.value !=''){
         valores[0].value = nomeProduto.value
         valores[1].value = fabricanteProduto.value
         valores[2].value = categoriaproduto.value
         valores[3].value = quantidade.value
         valores[4].value = Number(quantidade.value) * Number(valor.value)
     }else{
-        alert('Escolha um produto e uma quantidade')
+        if(nomeProduto.value === ''){
+            alert('Qual nome do produto')
+        }else if(quantidade.valor === ''){
+            alert('Qual a quantidade do produto')
+        }else if(valor.value === ''){
+            alert('Qual o valor do produto')
+        }
     }
 }
 function editar(){

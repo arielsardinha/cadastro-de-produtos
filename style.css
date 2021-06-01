@@ -6,6 +6,7 @@
 section{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .cadastro div{
     height: 50px;

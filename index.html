@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- PRDUTOS -->
+    <section>
+        <div class="cadastro">
+            <h1>CADASTRO PRODUTO</h1>
+            <div>
+                <label for="nome-produto">Nome Produto</label>
+                <input type="text" name="nome-produto" id="nome-produto" placeholder="Nescau" >
+            </div>
+            <div>
+                <label for="fabricante-produto">FABRICANTE PRODUTO</label>
+                <select name="" id="fabricante-produto">
+                    <option value="Nestle">Nestle</option>
+                    <option value="Lactea">Lactea</option>
+                    <option value="Itambe">Itambe</option>
+                </select>
+            </div>
+            <div>
+                <label for="categoria-produto">CATEGORIA PRODUTO</label>
+                <select name="" id="categoria-produto">
+                    <option value="Biscoito" >Biscoito</option>
+                    <option value="Lactea" >Lactea</option>
+                    <option value="Itambe" >Itambe</option>
+                </select>
+            </div>
+            <div>
+                    <label for="quantidade">QUANTIDADE</label>
+                <input type="number" name="quantidade" id="quantidade" placeholder="10">
+            </div>
+            <div>
+                <label for="valor-unidade">VALOR UNIDADE</label>
+                <input type="number" name="valor-unidade" id="valor-unidade" placeholder="4.00">
+            </div>
+            <input type="submit" id="adcionar-produto" value="Adcionar Produto" onclick="adcionarCarrinho()">
+        </div>
+        <!-- CARRINHO -->
+        <div id="carrinho">
+            <h1>PRODTOS CADASTRADOS</h1>
+            <div id="catalogo">
+                <input type="text" disabled>
+                <input type="text" disabled>
+                <input type="text" disabled>
+                <input type="text" disabled>
+                <input type="text" disabled>
+                <button onclick="editar()">Editar</button>
+                <button onclick="salvar()">Salvar</button>
+                <button onclick="deletar()">Deletar</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

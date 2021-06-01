@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+}
+.cadastro div{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#catalogo{
+    background-color: rgb(123, 123, 255);
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#catalogo input{
+    width: 90px;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    border: transparent;
+    text-transform: uppercase;
+}
+#catalogo button{
+    margin: 0 5px;
+    padding: 4px 25px;
+    border-radius: 3px;
+    border: none;
+}

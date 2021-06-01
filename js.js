@@ -10,7 +10,6 @@ const valores = document.querySelectorAll('#catalogo input')
 const btn = document.querySelectorAll('#catalogo button')
 btn[1].style.display = 'none'
 
-
 function adcionarCarrinho(){
     if(nomeProduto.value != '' && quantidade.value != '' && valor.value !=''){
         valores[0].value = nomeProduto.value

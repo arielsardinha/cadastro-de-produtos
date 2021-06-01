@@ -33,6 +33,7 @@ function editar(){
         btn[1].style.display = 'block'
         for(let x = 0; x <= valores.length; x++){
             valores[x].disabled = false
+            valores[x].style.backgroundColor = 'white'
         } 
     }else{
         alert('nao tem nada para ser editado')
@@ -43,6 +44,7 @@ function salvar(){
     btn[1].style.display = 'none'
     for(let x = 0; x <= valores.length; x++){
         valores[x].disabled = true
+        valores[x].style.backgroundColor = 'transparent'
     } 
 }
 function deletar(){

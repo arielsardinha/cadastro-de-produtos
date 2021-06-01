@@ -27,6 +27,7 @@ section{
     background-color: transparent;
     border: transparent;
     text-transform: uppercase;
+    margin: 0 5px;
 }
 #catalogo button{
     margin: 0 5px;
